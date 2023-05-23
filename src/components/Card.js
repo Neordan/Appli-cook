@@ -4,7 +4,19 @@ const Card = ( { dish }) => {
 
     return (
         <div className="dish-card">
-            <h2 >{dish.strMeal}</h2> // Affiche les noms des plats en utilisant les données récupérées
+            {/* Affiche les noms des plats en utilisant les données récupérées */}
+            <h2 >{dish.strMeal}</h2> 
+
+            {/* Affiche l'origine du plat en utilisant la propriété "strArea" de l'objet "dish"
+            La valeur de "strArea" représente la région d'origine du plat */}
+
+            <p>Origin : {dish.strArea}</p>
+
+            {/* Affiche une image du plat en utilisant la propriété "strMealThumb" de l'objet "dish"
+            La valeur de "strMealThumb" est l'URL de l'image du plat
+            L'attribut "alt" de l'image est défini comme "photo de [nom du plat]" pour une alternative textuelle */}
+
+            <img src={dish.strMealThumb} alt={"photo de " + dish.strMeal} />
         </div>
     );
 };
