@@ -4,27 +4,32 @@
     max-width: 280px;
     border: 2px solid #54331f;
     border-radius: 10px;
-    margin: 5px;
+    margin: 0.5rem;
     padding: 10px;
+    
+    &:hover {
+        box-shadow: 1px 1px 10px #523023;
+    }
 
     h2 {
-        font-size: 1.5rem;
-        font-weight: 600;
+        font-size: 1.6rem;
+        font-weight: 700;
         margin-bottom: 0.5rem;
-        color: #a4643c;
+        color: rgb(149, 103, 69);
     }
 
     .origin {
         font-size: 1.1rem;
-        margin-bottom: 0.8rem;
+        font-style: italic;
     }
 
     img {
-        width: 80%;
+        width: 85%;
+        border-radius: 10px;
+        margin: 0.8rem;
     }
 
     .instruction {
-        text-align: justify;
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 15;
