@@ -1,0 +1,23 @@
+.dish-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: #a4643c;
+    }
+
+    p {
+        font-size: 1.1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    img {
+        width: 80%;
+    }
+
+}

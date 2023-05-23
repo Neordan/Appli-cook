@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background: #cabbab;
+}
+
+h1 {
+    color: rgb(106, 73, 50);
+    font-size: 2.4rem;
+    margin: 25px;
+}
+
+input {
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    border: none;
+    border: 2px solid rgb(149, 103, 69);
+    border-radius: 10px;
+}
+
+.dish-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
