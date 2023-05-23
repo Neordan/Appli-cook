@@ -1,6 +1,7 @@
 .dish-card {
     flex: 1 0 20%;
     min-width: 180px;
+    max-width: 280px;
     border: 2px solid #54331f;
     border-radius: 10px;
     margin: 5px;
@@ -13,13 +14,21 @@
         color: #a4643c;
     }
 
-    p {
+    .origin {
         font-size: 1.1rem;
         margin-bottom: 0.8rem;
     }
 
     img {
         width: 80%;
+    }
+
+    .instruction {
+        text-align: justify;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 15;
+        overflow: hidden;
     }
 
 }
