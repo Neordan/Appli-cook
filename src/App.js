@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import Card from './components/Card';
 
 const App = () => {
   const [dishesData, setDishesData] = useState([]);
@@ -19,8 +20,12 @@ const App = () => {
       <input type="text" placeholder="Search by ingredient" />
       {/* container pour les plats */}
       <div className="dish-container">
+        {/* Boucle sur les données des plats pour afficher chaque plat */}
         {dishesData.map((dish) => (
-          <h2 key={dish.idMeal}>{dish.strMeal}</h2> // Affiche les noms des plats en utilisant les données récupérées
+          // Rendu d'un composant "Card" pour afficher les détails d'un plat
+          // La clé unique "key" est définie sur "dish.idMeal" pour optimiser le rendu des éléments
+          // Les données du plat sont passées au composant "Card" via la prop "dish"
+          <Card key={dish.idMeal} dish={dish} />
         ))}
       </div>
     </div>
