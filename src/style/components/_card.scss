@@ -1,8 +1,10 @@
 .dish-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex: 1 0 20%;
+    min-width: 180px;
+    border: 2px solid #54331f;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
 
     h2 {
         font-size: 1.5rem;
