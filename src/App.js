@@ -26,9 +26,9 @@ const App = () => {
       {/* container pour les plats */}
       <div className="dish-container">
         {/* Boucle sur les données des plats pour afficher chaque plat */}
-        {dishesData
+        {dishesData &&
           // Afficher les cards de 0 à 24 
-          .slice(0, 24)
+          dishesData.slice(0, 24)
           .map((dish) => (
             // Rendu d'un composant "Card" pour afficher les détails d'un plat
             // La clé unique "key" est définie sur "dish.idMeal" pour optimiser le rendu des éléments
